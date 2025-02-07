@@ -114,10 +114,44 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 height: 70,
                 width: double.infinity,
-                color: Color(0xfff51f00),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: 70,
+                      width: 70,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 75, 4, 4),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                    Container(
+                      height: 70,
+                      width: 70,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 43, 177, 20),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),Container(
+                      height: 70,
+                      width: 70,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 16, 6, 44),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),Container(
+                      height: 70,
+                      width: 70,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 65, 2, 37),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
