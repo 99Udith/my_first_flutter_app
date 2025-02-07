@@ -69,7 +69,7 @@ class MyApp extends StatelessWidget {
                 width: double.infinity,
                 color: Color(0xff0f00f0),
               ),
-              Container(
+              SizedBox(
                 height: 200,
                 width: double.infinity,
                 child: Row(
