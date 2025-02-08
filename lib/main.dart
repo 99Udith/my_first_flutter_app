@@ -10,149 +10,47 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "flutter App",
+      title: "Layout_1",
       home: Scaffold(
         appBar: AppBar(
           title: Text("My Flutter App"),
-          backgroundColor: Color(0xfffff000),
+          backgroundColor: Color.fromARGB(255, 169, 22, 171),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SizedBox(
-                height: 140,
+              Container(
+                height: 280,
                 width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: 140,
-                      width: 185,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xffff00ff)
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: 65,
-                          width: 185,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Color.fromARGB(255, 51, 206, 12)
-                          ),
-                        ),
-                        Container(
-                          height: 65,
-                          width: 185,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Color.fromARGB(255, 50, 16, 176)
-                          ),
-                        ),
-                      ],
-                    )
-                  ],
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 56, 204, 231),
+                  borderRadius: BorderRadius.circular(20)
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 15,horizontal: 10),
+                  child: Text("Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",
+                  style: TextStyle(
+                    fontSize: 18
+                  ),),
                 ),
               ),
               Container(
-                height: 70,
+                height: 280,
                 width: double.infinity,
-                color: Color.fromARGB(255, 41, 192, 71),
-              ),
-              Container(
-                height: 70,
-                width: double.infinity,
-                color: Color(0xff0f00f0),
-              ),
-              SizedBox(
-                height: 200,
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: 200,
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Color(0xff00f0ff)
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: 60,
-                          width: 180,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xff500450)
-                          ),
-                        ),
-                        Container(
-                          height: 60,
-                          width: 180,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color.fromARGB(255, 144, 148, 22)
-                          ),
-                        ),
-                        Container(
-                          height: 60,
-                          width: 180,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color.fromARGB(255, 24, 80, 169)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 210, 235, 20),
+                  borderRadius: BorderRadius.circular(20)
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 35,horizontal: 10),
+                  child: Text("Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",
+                  style: TextStyle(
+                    fontSize: 18
+                  ),),
                 ),
               ),
-              SizedBox(
-                height: 70,
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 75, 4, 4),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),
-                    Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 43, 177, 20),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 16, 6, 44),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 65, 2, 37),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         ),
