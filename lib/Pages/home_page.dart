@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter_app/Widgets/small_container.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-  //variables
-  final double boxWidthHeight = 180; 
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,58 +59,10 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: boxWidthHeight,
-                    width: boxWidthHeight,
-                    decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 78, 18, 133),
-                      borderRadius: BorderRadius.circular(10)
-                    ),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text("open-source",style: TextStyle(
-                            fontSize: 20,
-                            color: Color(0xFFffffff)
-                          ),),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: Text("Flutter is an open-source Ul (User Interface) software development wit created by Doogia",style: TextStyle(
-                            fontSize: 13,
-                            color: Color(0xFFffffff),
-                          ),),
-                        )
-                      ],
-                    ),
+                  SmallContainer(
+                    textTitle: "",
+                    textDescription: "",
                   ),
-                  Container(
-                height: boxWidthHeight,
-                width: boxWidthHeight,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 78, 18, 133),
-                      borderRadius: BorderRadius.circular(10)
-                ),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: Text("open-source",style: TextStyle(
-                        fontSize: 20,
-                        color: Color(0xFFffffff)
-                      ),),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: Text("Flutter is an open-source Ul (User Interface) software development wit created by Doogia",style: TextStyle(
-                        fontSize: 13,
-                        color: Color(0xFFffffff),
-                      ),),
-                    )
-                  ],
-                ),
-              )
                 ],
               ),
               
