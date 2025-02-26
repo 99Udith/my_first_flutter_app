@@ -94,11 +94,42 @@ class HomePage extends StatelessWidget {
                   children: [
                     BoxContainer(
                       boxContainerColor: Color.fromARGB(255, 26, 171, 128),
+                      boxContainerIcon: Icon(Icons.location_on),
+                      boxContainerTextColor: Color(0xFF000000),
+                    ),
+                    BoxContainer(
+                      boxContainerColor: Color.fromARGB(255, 139, 24, 143),
+                      boxContainerIcon: Icon(Icons.watch),
+                      boxContainerTextColor: Color(0xFFffffff),
                     ),                   
                     // BoxContainer(),                   
                   ],
-                )
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Divider(
+                  color: Color(0xFFffffff),
+                  thickness: 1,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text("Flutter Blocks App",style: TextStyle(
+                  color: Color(0xFFffffff),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500
+                ),),
+                SizedBox(
+                  height: 20,
+                ),
+                Text("Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015 and has gained significant popularity among developers due to its fast development cycle, expressive and flexible UI components, and excellent performance.",style: TextStyle(
+                  color: Color(0xFFffffff),
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500
+                ),),
               ],
+              
             ),
           ),
         ),
